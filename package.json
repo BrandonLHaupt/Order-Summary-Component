@@ -1,5 +1,6 @@
 {
   "name": "my-react-app",
+  "homepage": "https://github.com/BrandonLHaupt/Order-Summary-Component",
   "private": true,
   "version": "0.0.0",
   "type": "module",
