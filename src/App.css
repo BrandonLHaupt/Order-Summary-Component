@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  font-family: "Red Hat Display", serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #E0E8FF;
+  box-shadow: 0px 15px 30px 8px rgba(198,207,243,1);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  /* height: 697px; */
+  background-color: white;
+  color: #1f2f56;
+  text-align: center;
+  border-radius: 10px;
+  
+}
+
+.container > img {
+  border-radius: 10px 10px 0 0;
+  height: 220px;
+  margin-bottom: 54px;
+}
+
+.container > p {
+  margin-bottom: 24px;
+  width: 292px;
+}
+
+.annualPlan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.planContainer {
+  /* background-color: green; */
+  background-color: #f5f7ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 352px;  
+  height: 74px;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.annualPlan img {
+  width: 48px;
+}
+
+.planContainer a {
+  font-weight: 700;
+  color: #3829e0;
+}
+
+.planContainer a:hover {
+  text-decoration: none;
+  color: #766CF1;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+}
+
+.price h2 {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.price p, .container p, .cancelOrder {
+  color: #7280a7;
+}
+
+h1 {
+  font-size: 29px;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+
+button {
+  width: 354px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #3829e0;
+  margin-bottom: 36px;
+  box-shadow: 0px 15px 18px 8px rgba(217,213,248,1);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #766CF1;
+}
+
+.cancelOrder {
+  text-decoration: none;
+  font-weight: 800;
+  margin-bottom: 53px;
+}
+
+.cancelOrder:hover {
+  color: #1f2f56;
+}
+
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 327px;
+  }
+
+  .container > img {
+    height: 160px;
+  }
+
+  .container h1 {
+    font-size: 23px;
+  }
+
+  .container p {
+    width: 260px;
+  }
+
+  .planContainer {
+    width: 278px;
+    height: 81px;
+  }
+
+  .price {
+    width: 100px;
+  }
+
+  .price h2, .price p {
+    font-size: 14px;
+  }
+
+  .planContainer a {
+    font-size: 13px;
+  }
+
+  button {
+    width: 278px;
+  }
+}
